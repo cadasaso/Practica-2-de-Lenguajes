@@ -14,6 +14,9 @@ operacionesISBN x =
 validarISBN :: Int -> Bool
 validarISBN x =
   mod x 11 == 0
+  
+codigo :: String -> Bool
+codigo x = validarISBN (operacionesISBN(transformarUltimoCaracter (filtrarGuionISBN x)))
  
 main :: IO ()
 main = do
