@@ -1,3 +1,4 @@
+import Data.Char
 filtrarGuionISBN :: String -> String
 filtrarGuionISBN x = filter (\x -> x /= '-') x
 
